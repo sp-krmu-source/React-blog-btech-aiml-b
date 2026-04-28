@@ -9,13 +9,11 @@ import Food from './components/Food'
 import Navbar from './components/Navbar'
 import "./App.css"
 import Deatils from './components/Deatils'
-import { useContext } from 'react'
-import { ThemeContext } from "./context/ThemeContext";
+
 
 const App = () => {
-  const { theme } = useContext(ThemeContext);
   return (
-    <div className={theme}>
+    <div>
       <BrowserRouter>
         <Navbar />
         <br />
